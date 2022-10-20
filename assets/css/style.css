@@ -1,7 +1,18 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 a.navbar:link {
     color:white;
     font-weight: bold;
 }
+
+.bg-gray {
+    background-color: #E9E9E9;
+}
+
 .ouvidoria{
     margin: 0 auto;
     margin-top: 1.5em;

@@ -1,7 +1,32 @@
-
-
 .ouvidoria{
     margin: 0 auto;
     margin-top: 1.5em;
     width: 85%;
+}
+
+.tabela_titulo{
+    background-color: #0054A8;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+}
+
+.fale_conosco{
+    margin-top: 1.5em;
+    height: 100px;
+}
+
+.corrupcao{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #4E4E4E;
 }

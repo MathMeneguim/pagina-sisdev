@@ -1,0 +1,12 @@
+
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_header{
+    width: 120px;
+    height: 70px;
+}

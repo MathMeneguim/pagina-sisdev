@@ -1,4 +1,7 @@
-
+a.navbar:link {
+    color:white;
+    font-weight: bold;
+}
 
 .container_header{
     display: flex;

@@ -6,14 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/Detran.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <title>Detran Ouvidoria</title>
 </head>
+
 <body>
     <header>
-        <div class="container_header">
-            <a href="https://www.detran.sp.gov.br/wps/portal/portaldetran/detran/atendimento/ouvidoria"><img class="image_header" src="./assets/img/Detran.png" alt="Logo detran"></a>
-            <a class="link_header" href="#"><span>Entre</span></a>    
-        </div>
+        <div class="container">
+            <div class="container-fluid w-100">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid d-flex justify-content-between">
+                      <div class="d-flex justify-content-center">
+                          <a class="navbar-brand" href="#">
+                            <img src="assets/img/logo.png" alt="" width="100">
+                          </a>
+                      </div>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse d-flex justify-content-left bg-primary id="navbarNavAltMarkup">
+                        <div class="navbar-nav bg-black d-flex gap-2 py-2">
+                            
+                          <a class="nav-link fw-semibold" style="color:white" aria-current="page" href="#"><span class="pe-2"><img src="./assets/img/icon-cnh.png" alt=""></span> CNH - Habilitacao</a>
+                          <a class="nav-link fw-semibold" style="color:white" href="#"><span class="pe-2"><img src="./assets/img/icon-veiculos.png"></span> Veiculos</a>
+                          <a class="nav-link fw-semibold" style="color:white" href="#"><span class="pe-2"><img src="./assets/img/icon-infracoes.png"></span> Infracoes</a>
+                          <a class="nav-link fw-semibold" style="color:white" href="#"><span class="pe-2"><img src="./assets/img/icon-educacao.png" alt=""></span>Educacao</a>
+                          <a class="nav-link fw-semibold" style="color:white" href="#"><span class="pe-2"><img src="./assets/img/icon-tutorial.png" alt=""></span>Tutoriais</a>
+                        </div>
+                        <div class="navbar-nav d-flex gap-2 py-2 flex-grow-1 justify-content-center">
+                            <a class="nav-link fw-semibold" style="color:white" href="#">Entre ou Cadastre-se</a>
+                        </div>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+         </div>
     </header>
     
 </body>

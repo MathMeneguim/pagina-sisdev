@@ -2,14 +2,35 @@ a.navbar:link {
     color:white;
     font-weight: bold;
 }
-
-.container_header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ouvidoria{
+    margin: 0 auto;
+    margin-top: 1.5em;
+    width: 85%;
 }
 
-.image_header{
-    width: 120px;
-    height: 70px;
+.tabela_titulo{
+    background-color: #0054A8;
+    color: #fff;
+    margin-top: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.fale_conosco{
+    height: 100px;
+    margin-top: 1.5em;
+}
+
+.corrupcao{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.rodape{
+    align-items: center;
+    background-color: #4E4E4E;
+    display: flex;
+    height: 150px;
+    justify-content: center;
 }

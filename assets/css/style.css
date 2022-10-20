@@ -6,16 +6,16 @@
 
 .tabela_titulo{
     background-color: #0054A8;
-    width: 100%;
     color: #fff;
-    text-align: center;
     margin-top: 1.5em;
+    text-align: center;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .fale_conosco{
-    margin-top: 1.5em;
     height: 100px;
+    margin-top: 1.5em;
 }
 
 .corrupcao{
@@ -24,9 +24,9 @@
 }
 
 .rodape{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 150px;
     background-color: #4E4E4E;
+    display: flex;
+    height: 150px;
+    justify-content: center;
 }

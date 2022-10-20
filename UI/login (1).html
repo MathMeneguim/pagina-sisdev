@@ -9,7 +9,7 @@
 		<meta name="format-detection" content="telephone=no"/>
 		<base href="http://10.200.74.12/maximo/webclient/skins/skins-20220824-1333/iot18/images/" target="_self"/>
 		
-		<title>Solicitar Cadastro de Leiloeiros</title>
+		<title>Solicitar Cadastro de Empresas</title>
 		<link rel="stylesheet" type="text/css" href="http://10.200.74.12/maximo/webclient/javascript/dojo-20220824-1333/dojo/resources/dojo.css"/>
 		<link rel="stylesheet" type="text/css" href="http://10.200.74.12/maximo/webclient/javascript/dojo-20220824-1333/dojox/html/resources/ellipsis.css"/>
 		<link rel="stylesheet" type="text/css" href="http://10.200.74.12/maximo/webclient/javascript/dojo-20220824-1333/dijit/themes/tundra/tundra.css"/>
@@ -65,21 +65,21 @@
 			
 			var webAppUrl = "http://10.200.74.12/maximo/oslc/";
 			var nextGenUrl = "http://10.200.74.12/maximo-x";
-			document.title="Solicitar Cadastro de Leiloeiros";
+			document.title="Solicitar Cadastro de Empresas";
 			isBidiEnabled = false;
 			var APP_KEY_LABEL = "Id do Registro";
 			var IMAGE_PATH="";
 			var MAINDOC=document;
 			// No more hidden document, so set it to current document for backwards compatibility.
 			var HIDDENDOC=document;
-			var IFRAMEPAGE = "http://10.200.74.12/maximo/ui/maximo.jsp?uisessionid=1258";
+			var IFRAMEPAGE = "http://10.200.74.12/maximo/ui/maximo.jsp?uisessionid=1255";
 			var XHRACTION = "http://10.200.74.12/maximo/ui/maximo.jsp";
-			var PORTLETACTION = "http://10.200.74.12/maximo/webclient/components/portletrenderer.jsp?uisessionid=1258";
+			var PORTLETACTION = "http://10.200.74.12/maximo/webclient/components/portletrenderer.jsp?uisessionid=1255";
             var USEFILEPROMPT = "0";
             var VERTLABELS = "false";
             var WFPIXELS = "80";
 			var DESIGNMODE=false;
-			var APPTARGET="ms_regfm02";
+			var APPTARGET="ms_regfm01";
 			var DEBUGLEVEL = 0;
 			var SCREENREADER = false;
 			var DATE_PATTERN = "dd-MM-yyyy";
@@ -143,7 +143,7 @@
 				}
 			};
 			
-			queueManager = new QueueManager({sessionid:decodeURIComponent("1258"), designmode:false, threshold:tpaeConfig.clientEventQueue.threshold, timeout:tpaeConfig.clientEventQueue.timeout, csrftoken:'aiag3m2q6c9dlr4dj4f8kmfgc7'});
+			queueManager = new QueueManager({sessionid:decodeURIComponent("1255"), designmode:false, threshold:tpaeConfig.clientEventQueue.threshold, timeout:tpaeConfig.clientEventQueue.timeout, csrftoken:'vo9njjht54er13impef9gp8djr'});
 			/* 
 			*	Do images last so that special bindings done in inputs do not overwrite related field events for hover images
 			* 	May wish to change all bindings in bindEvents to use dojo.connect in the future
@@ -151,7 +151,7 @@
 			var eventBindObjects = new Array("a","div","input","button","select","span","textarea","fieldset","img","td");
 			var LEAVE_TIMEOUT = 0;
 
-			var PRODUCTNAME = "Maximo - Solicitar Cadastro de Leiloeiros";
+			var PRODUCTNAME = "Maximo - Solicitar Cadastro de Empresas";
 			SESSION_TIMEOUT = 1800;//in seconds
 			
 			timeUntilLogout=SESSION_TIMEOUT;//in seconds
@@ -162,24 +162,24 @@
 			var WARNLOSTCONNECTION =  "A conexão com o servidor foi perdida.  Quando a conexão for restabelecida será feita uma tentativa para reenviar os eventos com falhas.";
 			var WARNCONNECTIONRESTORED =  "A conexão com o servidor foi restaurada e todos os eventos foram enviados com sucesso ao servidor.";
 			var CONNECTIONRESTOREDBTNTEXT =  "OK";
-			var WARNLOSTURL  = "http://10.200.74.12/maximo/ui/1666203101680?checkhiddenandconnection=true&uisessionid=1258";
+			var WARNLOSTURL  = "http://10.200.74.12/maximo/ui/1666202769421?checkhiddenandconnection=true&uisessionid=1255";
 			var SHOWLOSTCONNECTIONWARNINGONLY = false;
-			var CONNECTIONREDRAWURL  = "http://10.200.74.12/maximo/ui/maximo.jsp?event=render&targetid=ms_regfm02&value=rerender&conectionwarningclosed=true&uisessionid=1258";
+			var CONNECTIONREDRAWURL  = "http://10.200.74.12/maximo/ui/maximo.jsp?event=render&targetid=ms_regfm01&value=rerender&conectionwarningclosed=true&uisessionid=1255";
 			CONNECTIONWARNINGINTERVAL = 15000;//in milliseconds.
 			CONNECTIONRECHECKINTERVAL = 2000;//in milliseconds.
 			var LEAVETOOLTIPOPEN = false;
 			var ASYNCTOOLTIPWAITEBEFOREOPEN = 2000;//in milliseconds.
 			var ASYNCTOOLTIPUSERVALUE =  "Você inseriu:";
 			var MAXRCURL = "http://10.200.74.12/maximo";
-			var TIMEOUTRESETURL = "http://10.200.74.12/maximo/servlet/sessionservlet?resetsession=true&uisessionid=1258";
-			var LOGOUTURL = "http://10.200.74.12/maximo/webclient/login/logout.jsp?uisessionid=1258";
-			var APPID = "ms_regfm02";
+			var TIMEOUTRESETURL = "http://10.200.74.12/maximo/servlet/sessionservlet?resetsession=true&uisessionid=1255";
+			var LOGOUTURL = "http://10.200.74.12/maximo/webclient/login/logout.jsp?uisessionid=1255";
+			var APPID = "ms_regfm01";
 			var HOSTNAME = "10.200.74.12";
 			var HOSTPORT = "80";
 			var ALWAYSOPENATTACHMENTS = false;
 			var PAGESEQNUM = "1";
-			var UISESSIONID = decodeURIComponent("1258");
-			var CSRFTOKEN = "aiag3m2q6c9dlr4dj4f8kmfgc7";
+			var UISESSIONID = decodeURIComponent("1255");
+			var CSRFTOKEN = "vo9njjht54er13impef9gp8djr";
 			var loadMethods = new Array;
 			function addLoadMethod(method)
 			{
@@ -202,7 +202,7 @@
 			var serverTZOffset = -10800000;
 			var clientTZOffset = new Date().getTimezoneOffset() * 60 * 1000;
 			var tzAdjustment = serverTZOffset + clientTZOffset;
-			var systemDate = 1666203101680 + tzAdjustment;
+			var systemDate = 1666202769421 + tzAdjustment;
 			var NEW_APPLINK = false;
 			var PROXYLOGINSTRINGCHECK = "pkmslogin";
 		var warnExit = false
@@ -286,7 +286,7 @@
 			var RECENTAPPTEXT = "Meus Aplicativos Recentes";
 			var tenantID = "";
 			
-					addToAppCache({"text":"Solicitar Cadastro de Leiloeiros","id":"recentApp_ms_regfm02","eventvalue":"ms_regfm02"});
+					addToAppCache({"text":"Solicitar Cadastro de Empresas","id":"recentApp_ms_regfm01","eventvalue":"ms_regfm01"});
 			
 			var hebrew=false;
 			var islamic=false;
@@ -316,12 +316,12 @@
 				}
 			</script>
 	</head>
-	<body   scroll='no'  data-appid="ms_regfm02"class="tundra"  style="overflow:hidden;cursor:wait;padding:0px;margin:0px;height:100%;width:100%" aria-labelledby="titlebar-tb_appname"
+	<body   scroll='no'  data-appid="ms_regfm01"class="tundra"  style="overflow:hidden;cursor:wait;padding:0px;margin:0px;height:100%;width:100%" aria-labelledby="titlebar-tb_appname"
 		onkeydown="bodyEvent(event)" onclick="bodyEvent(event)" >
 		<form  id="psuedoForm" aria-label="formulário principal" role="presentation" 
 			action="http://10.200.74.12/maximo/webclient/maximo.jsp" method="post" onsubmit="return false"
 			onkeypress="if(event.keyCode=='13' && getSourceElement(event).tagName!='TEXTAREA' && getSourceElement(event).tagName!='A'){if(event.preventDefault){ event.preventDefault(); }else{ event.returnValue = false;}}">
-        <div class="appBreadCrumbs"  aria-label="Solicitar Cadastro de Leiloeiros" role="navigation">
+        <div class="appBreadCrumbs"  aria-label="Solicitar Cadastro de Empresas" role="navigation">
 	 	<script>
 			if(browserSupportsLocalStorage()) {
 				var dataString =  localStorage.getItem("tpaeInspectorData");
@@ -362,7 +362,7 @@
 							
 							<td style="white-space: nowrap">
 							
-								<button type="button" id="titlebar-tb_homeButton" onkeypress="if(hasKeyCode(event, 'KEYCODE_ENTER')){setClickPosition(this);this.click();}" onclick="setClickPosition(this);sendEvent('changeapp','ms_regfm02','startcntr')" title="Centro de Início" alt="Centro de Início" aria-label="Centro de Início" onmouseout="this.className='homebutton';" onmouseover="this.className='homebutton homebuttonhover'" onblur="this.className='homebutton';" onfocus="this.className='homebutton homebuttonhover'" class="homebutton" >
+								<button type="button" id="titlebar-tb_homeButton" onkeypress="if(hasKeyCode(event, 'KEYCODE_ENTER')){setClickPosition(this);this.click();}" onclick="setClickPosition(this);sendEvent('changeapp','ms_regfm01','startcntr')" title="Centro de Início" alt="Centro de Início" aria-label="Centro de Início" onmouseout="this.className='homebutton';" onmouseover="this.className='homebutton homebuttonhover'" onblur="this.className='homebutton';" onfocus="this.className='homebutton homebuttonhover'" class="homebutton" >
                                     <img id="homebutton_image" src="ac_ban_home.png" style="display: inline; margin: 0px -5px 0px -5px;" alt="Centro de Início"/>
                                 </button>
                                 <img aria-hidden="true" style="margin:0px;vertical-align: bottom" src="ac_ban_divider.png" alt=""/>
@@ -370,7 +370,7 @@
 							</td>
 							<td style="vertical-align:middle;white-space: nowrap;">
 								<span id="titlebar-tb_appname" class="homeButtontxtappname">&nbsp;
-									Solicitar Cadastro de Leiloeiros
+									Solicitar Cadastro de Empresas
 								</span>
 							</td>
 						</tr>
@@ -443,6 +443,7 @@
 	
 	<div nowrap id="md6723283-to_holder" class="tableouter"  style="display:none;background-color: inherit !important">
 	
+		<table role="presentation" id="md6723283-to"  valign="top" summary="" class="tableouter   " style=";border-collapse: collapse;">
 		</table>
 	
 	</div>
@@ -453,6 +454,11 @@
 		<tr>
 			<td id="m9813d927-so"  control="true" style="vertical-align:top;">
 	
+		<div id="m9813d927-so_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
+		
+			<table id="m9813d927-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="m9813d927-so_1"  style="vertical-align:top;display:;" > 
+	<td id="m9813d927-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m9813d927-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">
+
 
 		<tr>
 			<td id="m347066e3-tabg_td" class="tabg    carddeck" style="vertical-align:top;padding:0px;margin:0px">
@@ -478,7 +484,7 @@
 				<img alt="" border="0" src="icon_details.gif" role="none"/>
 			</td>
 			<td class="text help" style="cursor:default">
-				A solicitação de cadastro habilita o acesso à área do leiloeiro. 
+				A solicitação de cadastro habilita o acesso à empresa. 
 			</td>
 		</tr>
 	</table>
@@ -495,9 +501,9 @@
 			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
 				<tr>
 						<td class="h_l"></td>
-<td role="presentation" id="m242bf5e5-hb_header_0"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><h1 labelledby="m242bf5e5-lb_h1" style="display:inline"><label id="m242bf5e5-lb" align='left' ctype="label"     noclick="1"   targetid="m242bf5e5-lb"    class="text st  " style="display:block;padding-left:2px;padding-top:2px;"><img id='m242bf5e5-lb_er_img' src='blank.gif' style='display:none' class='label_blank_icon' title="" alt=""/>Informações de Inscrição</label></h1></td><td role="presentation" id="m242bf5e5-hb_header_1"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;></td><td role="presentation" id="m242bf5e5-hb_header_2" aria-hidden="true"  align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%">	<div id="m242bf5e5-bl" aria-disabled="true" name="m242bf5e5-bl" class="text ts  "  style="width:100%">&nbsp;</div>
-</td><td role="presentation" id="m242bf5e5-hb_header_3"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><a id=m242bf5e5-ti  href="Javascript: void(0);" ctype="toggleimage" ev="true" title="Minimizar Seção Informações de Inscrição" tabindex="0"   
-			><img id="m242bf5e5-ti_img"  aria-disabled="true"  tabindex="-1" border="0" class="ti   " src="minimize.gif" source="minimize.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimizar Seção Informações de Inscrição" title="Minimizar Seção Informações de Inscrição"   /></a>
+<td role="presentation" id="m242bf5e5-hb_header_0"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><h1 labelledby="m242bf5e5-lb_h1" style="display:inline"><label id="m242bf5e5-lb" align='left' ctype="label"     noclick="1"   targetid="m242bf5e5-lb"    class="text st  " style="display:block;padding-left:2px;padding-top:2px;"><img id='m242bf5e5-lb_er_img' src='blank.gif' style='display:none' class='label_blank_icon' title="" alt=""/>Informações da Empresa</label></h1></td><td role="presentation" id="m242bf5e5-hb_header_1"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;></td><td role="presentation" id="m242bf5e5-hb_header_2" aria-hidden="true"  align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%">	<div id="m242bf5e5-bl" aria-disabled="true" name="m242bf5e5-bl" class="text ts  "  style="width:100%">&nbsp;</div>
+</td><td role="presentation" id="m242bf5e5-hb_header_3"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><a id=m242bf5e5-ti  href="Javascript: void(0);" ctype="toggleimage" ev="true" title="Minimizar Seção Informações da Empresa" tabindex="0"   
+			><img id="m242bf5e5-ti_img"  aria-disabled="true"  tabindex="-1" border="0" class="ti   " src="minimize.gif" source="minimize.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimizar Seção Informações da Empresa" title="Minimizar Seção Informações da Empresa"   /></a>
 			</td>					<td class="h_r"></td>
 				</tr>
 			</table>
@@ -518,9 +524,30 @@
 		
 			<table id="m64df3d37-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="m64df3d37-so_1"  style="vertical-align:top;display:;" > 
 	<td id="m64df3d37-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m64df3d37-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="me54bdba4-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="me54bdba4-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="me54bdba4-lb" align='right' ctype="label"     noclick="1"   targetid="me54bdba4-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="me54bdba4-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Matrícula:</label></td>
+				<td  role='presentation'  id="me54bdba4-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="me54bdba4-lb" align='right' ctype="label"     noclick="1"   targetid="me54bdba4-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="me54bdba4-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>CNPJ:</label></td>
 				<td  role='presentation'  id="me54bdba4-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="0" id="me54bdba4-tb"  aria-required="true"  role="textbox"  aria-labelledby="me54bdba4-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="me54bdba4-img"  db="mb5fd5681-pb"   maxlength="50" style=";width:200px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;0&quot;,&quot;length&quot;:&quot;50&quot;,&quot;required&quot;:true}'/><img id="me54bdba4-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="me54bdba4-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+<input datatype="1" id="me54bdba4-tb"  aria-required="true"  role="textbox"  aria-labelledby="me54bdba4-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="me54bdba4-img"  db="mb5fd5681-pb"   maxlength="20" style=";width:200px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;20&quot;,&quot;required&quot;:true}'/><img id="me54bdba4-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="me54bdba4-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+				<tr id="m7c428a1e-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m7c428a1e-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m7c428a1e-lb" align='right' ctype="label"     noclick="1"   targetid="m7c428a1e-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m7c428a1e-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Razão Social:</label></td>
+				<td  role='presentation'  id="m7c428a1e-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="m7c428a1e-tb"  aria-required="true"  role="textbox"  aria-labelledby="m7c428a1e-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m7c428a1e-img"  db="mb5fd5681-pb"   maxlength="100" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;100&quot;,&quot;required&quot;:true}'/><img id="m7c428a1e-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m7c428a1e-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+				<tr id="mb45ba88-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="mb45ba88-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="mb45ba88-lb" align='right' ctype="label"     noclick="1"   targetid="mb45ba88-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="mb45ba88-tb">Nome Fantasia:</label></td>
+				<td  role='presentation'  id="mb45ba88-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="mb45ba88-tb"   role="textbox"  aria-labelledby="mb45ba88-lb" class="fld text   ib "     ctype="textbox"   li="mb45ba88-img"  db="mb5fd5681-pb"   maxlength="100" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;100&quot;}'/><img id="mb45ba88-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mb45ba88-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+				<tr id="m95212f2b-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m95212f2b-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m95212f2b-lb" align='right' ctype="label"     noclick="1"   targetid="m95212f2b-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m95212f2b-tb">Email da Empresa:</label></td>
+				<td  role='presentation'  id="m95212f2b-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="2" id="m95212f2b-tb"   role="textbox"  aria-labelledby="m95212f2b-lb" class="fld text   ib "     ctype="textbox"   li="m95212f2b-img"  db="mb5fd5681-pb"   maxlength="100" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;2&quot;,&quot;length&quot;:&quot;100&quot;}'/><img id="m95212f2b-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m95212f2b-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
 			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
 	    </td>
 				</tr>
@@ -548,7 +575,28 @@
 		<div id="m766a92d9-so_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
 		
 			<table id="m766a92d9-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="m766a92d9-so_1"  style="vertical-align:top;display:;" > 
-	<td id="m766a92d9-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ></td>
+	<td id="m766a92d9-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m766a92d9-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="m63dfa90a-co_0"  role='presentation'    control="true"  class="combobox  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m63dfa90a-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:top;"><label id="m63dfa90a-lb" align='right' ctype="label"     noclick="1"   targetid="m63dfa90a-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m63dfa90a-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Atividade:</label></td>
+				<td  role='presentation'  id="m63dfa90a-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:top;">
+<input datatype="1" id="m63dfa90a-tb"  aria-required="true"  role="combobox" aria-autocomplete="none"  class="fld text cbt  ib fld fld_req"     ctype="textbox"   li="m63dfa90a-img" liclick="1"    maxlength="1" style=";width:140px;"      sue="1"  readonly="readonly" type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;1&quot;,&quot;required&quot;:true}'/><img id="m63dfa90a-img" sf="1"   ctype="image" alt="Imagem suspensa"  src="FIREFOX_dropdown.gif" source="FIREFOX_dropdown" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="m63dfa90a-tb"  class="di " align="top"    no-bg-hover  ev="combobox" tabindex="-1" title="Imagem suspensa"/></td>
+				</tr>
+				<tr id="mfad6f8b0-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="mfad6f8b0-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="mfad6f8b0-lb" align='right' ctype="label"     noclick="1"   targetid="mfad6f8b0-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="mfad6f8b0-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Estado:</label></td>
+				<td  role='presentation'  id="mfad6f8b0-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="mfad6f8b0-tb"  aria-required="true"  role="textbox"  aria-labelledby="mfad6f8b0-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="mfad6f8b0-img"  db="mb5fd5681-pb"   maxlength="2" style=";width:5.5ch;"         type="text"   value="SP" ov="SP" work="1" fldInfo='{&quot;lookup&quot;:&quot;valuelist&quot;,&quot;dsid&quot;:&quot;MS_STATE&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;afindex&quot;:&quot;0&quot;,&quot;length&quot;:&quot;2&quot;,&quot;eventpriority&quot;:2,&quot;required&quot;:true}'/><img id="mfad6f8b0-img" sf="1"   ctype="image" alt="Selecionar Valor"  src="img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="mfad6f8b0-tb" aria-haspopup="true" class="dButton " align="center"    no-bg-hover  ev="valuelist" tabindex="-1" title="Selecionar Valor"/></td>
+				</tr>
+				<tr id="m8dd1c826-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m8dd1c826-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m8dd1c826-lb" align='right' ctype="label"     noclick="1"   targetid="m8dd1c826-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m8dd1c826-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Cidade:</label></td>
+				<td  role='presentation'  id="m8dd1c826-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="m8dd1c826-tb"  aria-required="true"  role="textbox"  aria-labelledby="m8dd1c826-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m8dd1c826-img"  db="mb5fd5681-pb"   maxlength="50" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;lookup&quot;:&quot;ms_cities&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;50&quot;,&quot;eventpriority&quot;:2,&quot;required&quot;:true}'/><img id="m8dd1c826-img" sf="1"   ctype="image" alt="Selecionar Valor"  src="img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="m8dd1c826-tb" aria-haspopup="true" class="dButton " align="center"    no-bg-hover  ev="ms_cities" tabindex="-1" title="Selecionar Valor"/></td>
+				</tr>
+				<tr id="m13b55d85-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m13b55d85-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m13b55d85-lb" align='right' ctype="label"     noclick="1"   targetid="m13b55d85-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m13b55d85-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>CEP:</label></td>
+				<td  role='presentation'  id="m13b55d85-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="m13b55d85-tb"  aria-required="true"  role="textbox"  aria-labelledby="m13b55d85-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m13b55d85-img"  db="mb5fd5681-pb"   maxlength="12" style=";width:12.100000000000001ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;lookup&quot;:&quot;ms_postalcode&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;12&quot;,&quot;eventpriority&quot;:2,&quot;required&quot;:true}'/><img id="m13b55d85-img" sf="1"   ctype="image" alt="Selecionar Valor"  src="img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="m13b55d85-tb" aria-haspopup="true" class="dButton " align="center"    no-bg-hover  ev="ms_postalcode" tabindex="-1" title="Selecionar Valor"/></td>
+				</tr>
+</table>
+</td>
 		</tr>
 		
 			</table>
@@ -571,7 +619,36 @@
 		<div id="mced6f5bc-so_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
 		
 			<table id="mced6f5bc-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="mced6f5bc-so_1"  style="vertical-align:top;display:;" > 
-	<td id="mced6f5bc-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ></td>
+	<td id="mced6f5bc-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="mced6f5bc-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="ma8837aaf-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="ma8837aaf-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="ma8837aaf-lb" align='right' ctype="label"     noclick="1"   targetid="ma8837aaf-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="ma8837aaf-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Bairro:</label></td>
+				<td  role='presentation'  id="ma8837aaf-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="ma8837aaf-tb"  aria-required="true"  role="textbox"  aria-labelledby="ma8837aaf-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="ma8837aaf-img"  db="mb5fd5681-pb"   maxlength="80" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;80&quot;,&quot;required&quot;:true}'/><img id="ma8837aaf-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="ma8837aaf-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+				<tr id="m318a2b15-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m318a2b15-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m318a2b15-lb" align='right' ctype="label"     noclick="1"   targetid="m318a2b15-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m318a2b15-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Endereço:</label></td>
+				<td  role='presentation'  id="m318a2b15-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="m318a2b15-tb"  aria-required="true"  role="textbox"  aria-labelledby="m318a2b15-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m318a2b15-img"  db="mb5fd5681-pb"   maxlength="115" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;115&quot;,&quot;required&quot;:true}'/><img id="m318a2b15-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m318a2b15-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+				<tr id="m468d1b83-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m468d1b83-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m468d1b83-lb" align='right' ctype="label"     noclick="1"   targetid="m468d1b83-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m468d1b83-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Número:</label></td>
+				<td  role='presentation'  id="m468d1b83-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="m468d1b83-tb"  aria-required="true"  role="textbox"  aria-labelledby="m468d1b83-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m468d1b83-img"  db="mb5fd5681-pb"   maxlength="9" style=";width:12.100000000000001ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;9&quot;,&quot;required&quot;:true}'/><img id="m468d1b83-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m468d1b83-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+				<tr id="md8e98e20-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="md8e98e20-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="md8e98e20-lb" align='right' ctype="label"     noclick="1"   targetid="md8e98e20-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="md8e98e20-tb">Complemento:</label></td>
+				<td  role='presentation'  id="md8e98e20-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="1" id="md8e98e20-tb"   role="textbox"  aria-labelledby="md8e98e20-lb" class="fld text   ib "     ctype="textbox"   li="md8e98e20-img"  db="mb5fd5681-pb"   maxlength="256" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;256&quot;}'/><img id="md8e98e20-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="md8e98e20-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
+				</tr>
+</table>
+</td>
 		</tr>
 		
 			</table>
@@ -603,9 +680,9 @@
 			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
 				<tr>
 						<td class="h_l"></td>
-<td role="presentation" id="mbd22a45f-hb_header_0"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><h1 labelledby="mbd22a45f-lb_h1" style="display:inline"><label id="mbd22a45f-lb" align='left' ctype="label"     noclick="1"   targetid="mbd22a45f-lb"    class="text st  " style="display:block;padding-left:2px;padding-top:2px;"><img id='mbd22a45f-lb_er_img' src='blank.gif' style='display:none' class='label_blank_icon' title="" alt=""/>Informações da Matrícula</label></h1></td><td role="presentation" id="mbd22a45f-hb_header_1"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;></td><td role="presentation" id="mbd22a45f-hb_header_2" aria-hidden="true"  align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%">	<div id="mbd22a45f-bl" aria-disabled="true" name="mbd22a45f-bl" class="text ts  "  style="width:100%">&nbsp;</div>
-</td><td role="presentation" id="mbd22a45f-hb_header_3"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><a id=mbd22a45f-ti  href="Javascript: void(0);" ctype="toggleimage" ev="true" title="Minimizar Seção Informações da Matrícula" tabindex="0"   
-			><img id="mbd22a45f-ti_img"  aria-disabled="true"  tabindex="-1" border="0" class="ti   " src="minimize.gif" source="minimize.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimizar Seção Informações da Matrícula" title="Minimizar Seção Informações da Matrícula"   /></a>
+<td role="presentation" id="mbd22a45f-hb_header_0"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><h1 labelledby="mbd22a45f-lb_h1" style="display:inline"><label id="mbd22a45f-lb" align='left' ctype="label"     noclick="1"   targetid="mbd22a45f-lb"    class="text st  " style="display:block;padding-left:2px;padding-top:2px;"><img id='mbd22a45f-lb_er_img' src='blank.gif' style='display:none' class='label_blank_icon' title="" alt=""/>Informações do Solicitante</label></h1></td><td role="presentation" id="mbd22a45f-hb_header_1"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;></td><td role="presentation" id="mbd22a45f-hb_header_2" aria-hidden="true"  align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%">	<div id="mbd22a45f-bl" aria-disabled="true" name="mbd22a45f-bl" class="text ts  "  style="width:100%">&nbsp;</div>
+</td><td role="presentation" id="mbd22a45f-hb_header_3"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><a id=mbd22a45f-ti  href="Javascript: void(0);" ctype="toggleimage" ev="true" title="Minimizar Seção Informações do Solicitante" tabindex="0"   
+			><img id="mbd22a45f-ti_img"  aria-disabled="true"  tabindex="-1" border="0" class="ti   " src="minimize.gif" source="minimize.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimizar Seção Informações do Solicitante" title="Minimizar Seção Informações do Solicitante"   /></a>
 			</td>					<td class="h_r"></td>
 				</tr>
 			</table>
@@ -638,21 +715,16 @@
 	    </td>
 				</tr>
 				<tr id="m7cdb6878-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m7cdb6878-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m7cdb6878-lb" align='right' ctype="label"     noclick="1"   targetid="m7cdb6878-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m7cdb6878-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Nome do Leiloeiro:</label></td>
+				<td  role='presentation'  id="m7cdb6878-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m7cdb6878-lb" align='right' ctype="label"     noclick="1"   targetid="m7cdb6878-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m7cdb6878-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Nome:</label></td>
 				<td  role='presentation'  id="m7cdb6878-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
 <input datatype="1" id="m7cdb6878-tb"  aria-required="true"  role="textbox"  aria-labelledby="m7cdb6878-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m7cdb6878-img"  db="mb5fd5681-pb"   maxlength="100" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;100&quot;,&quot;required&quot;:true}'/><img id="m7cdb6878-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m7cdb6878-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
 			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
 	    </td>
 				</tr>
-				<tr id="me2bffddb-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="me2bffddb-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="me2bffddb-lb" align='right' ctype="label"     noclick="1"   targetid="me2bffddb-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="me2bffddb-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Estado:</label></td>
-				<td  role='presentation'  id="me2bffddb-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="me2bffddb-tb"  aria-required="true"  role="textbox"  aria-labelledby="me2bffddb-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="me2bffddb-img"  db="mb5fd5681-pb"   maxlength="2" style=";width:5.5ch;"         type="text"   value="SP" ov="SP" work="1" fldInfo='{&quot;lookup&quot;:&quot;valuelist&quot;,&quot;dsid&quot;:&quot;MS_STATE&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;afindex&quot;:&quot;0&quot;,&quot;length&quot;:&quot;2&quot;,&quot;eventpriority&quot;:2,&quot;required&quot;:true}'/><img id="me2bffddb-img" sf="1"   ctype="image" alt="Selecionar Valor"  src="img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="me2bffddb-tb" aria-haspopup="true" class="dButton " align="center"    no-bg-hover  ev="valuelist" tabindex="-1" title="Selecionar Valor"/></td>
-				</tr>
-				<tr id="m95b8cd4d-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m95b8cd4d-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m95b8cd4d-lb" align='right' ctype="label"     noclick="1"   targetid="m95b8cd4d-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m95b8cd4d-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Cidade:</label></td>
-				<td  role='presentation'  id="m95b8cd4d-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="m95b8cd4d-tb"  aria-required="true"  role="textbox"  aria-labelledby="m95b8cd4d-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m95b8cd4d-img"  db="mb5fd5681-pb"   maxlength="50" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;lookup&quot;:&quot;ms_cities&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;50&quot;,&quot;eventpriority&quot;:2,&quot;required&quot;:true}'/><img id="m95b8cd4d-img" sf="1"   ctype="image" alt="Selecionar Valor"  src="img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="m95b8cd4d-tb" aria-haspopup="true" class="dButton " align="center"    no-bg-hover  ev="ms_cities" tabindex="-1" title="Selecionar Valor"/></td>
+				<tr id="m642b8f75-co_0"  role='presentation'    control="true"  class="combobox  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m642b8f75-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:top;"><label id="m642b8f75-lb" align='right' ctype="label"     noclick="1"   targetid="m642b8f75-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m642b8f75-tb">Cargo:</label></td>
+				<td  role='presentation'  id="m642b8f75-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:top;">
+<input datatype="1" id="m642b8f75-tb"  aria-readonly="true"  role="combobox" aria-autocomplete="none"  class="fld text cbt  ib readonly fld fld_ro"     ctype="textbox"   li="m642b8f75-img" liclick="1"    maxlength="2" style=";width:180px;"     sue="1" tabindex="-1" readonly="readonly" type="text"   value="SÓCIO PROPRIETÁRIO" work="1"/><img id="m642b8f75-img" sf="1"  active="0" ctype="image" alt="Imagem suspensa"  src="FIREFOX_dropdown.gif" source="FIREFOX_dropdown" imgtype=".gif" style="display:inline;margin:0px" border="0"  lc="m642b8f75-tb"  class="di " align="top"    no-bg-hover  ev="combobox" title="Imagem suspensa"/></td>
 				</tr>
 </table>
 </td>
@@ -679,35 +751,23 @@
 		
 			<table id="m9d5d29da-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="m9d5d29da-so_1"  style="vertical-align:top;display:;" > 
 	<td id="m9d5d29da-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m9d5d29da-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="m14417bfa-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m14417bfa-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m14417bfa-lb" align='right' ctype="label"     noclick="1"   targetid="m14417bfa-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m14417bfa-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>CEP:</label></td>
+				<td  role='presentation'  id="m14417bfa-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m14417bfa-lb" align='right' ctype="label"     noclick="1"   targetid="m14417bfa-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m14417bfa-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Email:</label></td>
 				<td  role='presentation'  id="m14417bfa-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="m14417bfa-tb"  aria-required="true"  role="textbox"  aria-labelledby="m14417bfa-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m14417bfa-img"  db="mb5fd5681-pb"   maxlength="12" style=";width:12.100000000000001ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;lookup&quot;:&quot;ms_postalcode&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;12&quot;,&quot;eventpriority&quot;:2,&quot;required&quot;:true}'/><img id="m14417bfa-img" sf="1"   ctype="image" alt="Selecionar Valor"  src="img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="m14417bfa-tb" aria-haspopup="true" class="dButton " align="center"    no-bg-hover  ev="ms_postalcode" tabindex="-1" title="Selecionar Valor"/></td>
+<input datatype="2" id="m14417bfa-tb"  aria-required="true"  role="textbox"  aria-labelledby="m14417bfa-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m14417bfa-img"  db="mb5fd5681-pb"   maxlength="100" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;2&quot;,&quot;length&quot;:&quot;100&quot;,&quot;required&quot;:true}'/><img id="m14417bfa-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m14417bfa-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
+	    </td>
 				</tr>
 				<tr id="m8d482a40-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m8d482a40-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m8d482a40-lb" align='right' ctype="label"     noclick="1"   targetid="m8d482a40-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m8d482a40-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Bairro:</label></td>
+				<td  role='presentation'  id="m8d482a40-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m8d482a40-lb" align='right' ctype="label"     noclick="1"   targetid="m8d482a40-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m8d482a40-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>DDD:</label></td>
 				<td  role='presentation'  id="m8d482a40-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="m8d482a40-tb"  aria-required="true"  role="textbox"  aria-labelledby="m8d482a40-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m8d482a40-img"  db="mb5fd5681-pb"   maxlength="80" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;80&quot;,&quot;required&quot;:true}'/><img id="m8d482a40-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m8d482a40-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+<input datatype="1" id="m8d482a40-tb"  aria-required="true"  role="textbox"  aria-labelledby="m8d482a40-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m8d482a40-img"  db="mb5fd5681-pb"   maxlength="3" style=";width:60px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;3&quot;,&quot;required&quot;:true}'/><img id="m8d482a40-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m8d482a40-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
 			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
 	    </td>
 				</tr>
 				<tr id="mfa4f1ad6-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="mfa4f1ad6-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="mfa4f1ad6-lb" align='right' ctype="label"     noclick="1"   targetid="mfa4f1ad6-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="mfa4f1ad6-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Endereço:</label></td>
+				<td  role='presentation'  id="mfa4f1ad6-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="mfa4f1ad6-lb" align='right' ctype="label"     noclick="1"   targetid="mfa4f1ad6-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="mfa4f1ad6-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Telefone:</label></td>
 				<td  role='presentation'  id="mfa4f1ad6-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="mfa4f1ad6-tb"  aria-required="true"  role="textbox"  aria-labelledby="mfa4f1ad6-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="mfa4f1ad6-img"  db="mb5fd5681-pb"   maxlength="115" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;115&quot;,&quot;required&quot;:true}'/><img id="mfa4f1ad6-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mfa4f1ad6-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
-				</tr>
-				<tr id="m642b8f75-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m642b8f75-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m642b8f75-lb" align='right' ctype="label"     noclick="1"   targetid="m642b8f75-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m642b8f75-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Número:</label></td>
-				<td  role='presentation'  id="m642b8f75-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="m642b8f75-tb"  aria-required="true"  role="textbox"  aria-labelledby="m642b8f75-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m642b8f75-img"  db="mb5fd5681-pb"   maxlength="9" style=";width:12.100000000000001ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;9&quot;,&quot;required&quot;:true}'/><img id="m642b8f75-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m642b8f75-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
-				</tr>
-				<tr id="m132cbfe3-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m132cbfe3-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m132cbfe3-lb" align='right' ctype="label"     noclick="1"   targetid="m132cbfe3-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m132cbfe3-tb">Complemento:</label></td>
-				<td  role='presentation'  id="m132cbfe3-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="m132cbfe3-tb"   role="textbox"  aria-labelledby="m132cbfe3-lb" class="fld text   ib "     ctype="textbox"   li="m132cbfe3-img"  db="mb5fd5681-pb"   maxlength="256" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;256&quot;}'/><img id="m132cbfe3-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m132cbfe3-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
+<input datatype="1" id="mfa4f1ad6-tb"  aria-required="true"  role="textbox"  aria-labelledby="mfa4f1ad6-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="mfa4f1ad6-img"  db="mb5fd5681-pb"   maxlength="10" style=";width:140px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;10&quot;,&quot;required&quot;:true}'/><img id="mfa4f1ad6-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mfa4f1ad6-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
 			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
 	    </td>
 				</tr>
@@ -735,40 +795,125 @@
 		<div id="m25e14ebf-so_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
 		
 			<table id="m25e14ebf-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="m25e14ebf-so_1"  style="vertical-align:top;display:;" > 
-	<td id="m25e14ebf-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m25e14ebf-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="mdf1da85f-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="mdf1da85f-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="mdf1da85f-lb" align='right' ctype="label"     noclick="1"   targetid="mdf1da85f-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="mdf1da85f-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>DDD:</label></td>
-				<td  role='presentation'  id="mdf1da85f-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="mdf1da85f-tb"  aria-required="true"  role="textbox"  aria-labelledby="mdf1da85f-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="mdf1da85f-img"  db="mb5fd5681-pb"   maxlength="3" style=";width:60px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;3&quot;,&quot;required&quot;:true}'/><img id="mdf1da85f-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mdf1da85f-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
+	<td id="m25e14ebf-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m25e14ebf-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="md22c4379-co_0"  role='presentation'    control="true"  class="combobox  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="md22c4379-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:top;"><label id="md22c4379-lb" align='right' ctype="label"     noclick="1"   targetid="md22c4379-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="md22c4379-tb">Tipo:</label></td>
+				<td  role='presentation'  id="md22c4379-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:top;">
+<input datatype="1" id="md22c4379-tb"   role="combobox" aria-autocomplete="none"  class="fld text cbt  ib "     ctype="textbox"   li="md22c4379-img" liclick="1"    maxlength="10" style=";width:12.100000000000001ch;"      sue="1"  readonly="readonly" type="text"   value="" ov="" work="1" fldInfo='{&quot;dsid&quot;:&quot;MS_COMPRELSHIP&quot;,&quot;inttype&quot;:&quot;1&quot;,&quot;afindex&quot;:&quot;0&quot;,&quot;length&quot;:&quot;10&quot;}'/><img id="md22c4379-img" sf="1"   ctype="image" alt="Imagem suspensa"  src="FIREFOX_dropdown.gif" source="FIREFOX_dropdown" imgtype=".gif" style="cursor:default;display:inline;margin:0px" border="0"  lc="md22c4379-tb"  class="di " align="top"    no-bg-hover  ev="combobox" tabindex="-1" title="Imagem suspensa"/></td>
 				</tr>
-				<tr id="m4614f9e5-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m4614f9e5-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m4614f9e5-lb" align='right' ctype="label"     noclick="1"   targetid="m4614f9e5-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m4614f9e5-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Telefone:</label></td>
-				<td  role='presentation'  id="m4614f9e5-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="m4614f9e5-tb"  aria-required="true"  role="textbox"  aria-labelledby="m4614f9e5-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m4614f9e5-img"  db="mb5fd5681-pb"   maxlength="10" style=";width:140px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;10&quot;,&quot;required&quot;:true}'/><img id="m4614f9e5-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m4614f9e5-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
+</table>
+</td>
+		</tr>
+		
+			</table>
+		</div>
+	
+			</td>
+		</tr>
+	</table>
+
+		</div>
+	</td>
 				</tr>
-				<tr id="m3113c973-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="m3113c973-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m3113c973-lb" align='right' ctype="label"     noclick="1"   targetid="m3113c973-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="m3113c973-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Email:</label></td>
-				<td  role='presentation'  id="m3113c973-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="2" id="m3113c973-tb"  aria-required="true"  role="textbox"  aria-labelledby="m3113c973-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="m3113c973-img"  db="mb5fd5681-pb"   maxlength="100" style=";width:40.0ch;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;2&quot;,&quot;length&quot;:&quot;100&quot;,&quot;required&quot;:true}'/><img id="m3113c973-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="m3113c973-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
+</table>
+</td>
+		</tr>
+		
+			</table>
+		</div>
+	
+			</td>
+		</tr>
+	
+		<tr>
+			<td id="mca2594c9-so"  control="true" style="vertical-align:top;">
+	
+		<div id="mca2594c9-so_compHolder" aria-live="polite" aria-hidden="true" style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:none" class="sectionBS" >
+		
+			<table id="mca2594c9-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="mca2594c9-so_0"  style="vertical-align:top;display:none;" > 		<td id="mca2594c9-hb" class="hbouter"  style="padding:0px;display:none;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+<td role="presentation" id="mca2594c9-hb_header_0"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mca2594c9-lb_holder" class="bc" style="display:none"></div></td><td role="presentation" id="mca2594c9-hb_header_1"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;></td><td role="presentation" id="mca2594c9-hb_header_2" aria-hidden="true"  align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mca2594c9-bl_holder" class="bc" style="display:none">	<div id="mca2594c9-bl" aria-disabled="true" name="mca2594c9-bl" class="text ts  "  style="width:100%">&nbsp;</div>
+</div></td><td role="presentation" id="mca2594c9-hb_header_3"   align="middle" class="hb   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mca2594c9-ti_holder" class="bc" style="display:none"><a id=mca2594c9-ti  href="Javascript: void(0);" ctype="toggleimage" ev="true" title="Minimizar Seção Informações do Pátio" tabindex="0"   
+			><img id="mca2594c9-ti_img"  aria-disabled="true"  tabindex="-1" border="0" class="ti   " src="minimize.gif" source="minimize.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimizar Seção Informações do Pátio" title="Minimizar Seção Informações do Pátio"   /></a>
+			</div></td>					<td class="h_r"></td>
 				</tr>
-				<tr id="maf775cd0-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="maf775cd0-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="maf775cd0-lb" align='right' ctype="label"     noclick="1"   targetid="maf775cd0-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="maf775cd0-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>DDD:</label></td>
-				<td  role='presentation'  id="maf775cd0-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="maf775cd0-tb"  aria-required="true"  role="textbox"  aria-labelledby="maf775cd0-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="maf775cd0-img"  db="mb5fd5681-pb"   maxlength="3" style=";width:60px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;3&quot;,&quot;required&quot;:true}'/><img id="maf775cd0-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="maf775cd0-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
+			</table>
+		</td>
+
+		</tr>
+		<tr id="mca2594c9-so_1"  style="vertical-align:top;display:none;" > 
+	<td id="mca2594c9-se" aria-live="polite" aria-hidden="true"     style="display:none;white-space:nowrap;padding-bottom: 2px;" class="section   sectionb" valign="top"  ><table role="presentation" control="true" id="mca2594c9-chld"   width="100%" height="100%" class="tdtblw  " summary=""  style="width:100%;height:100%;;vertical-align:top">				<tr id="m14219d8d-co_0"  role='presentation'    control="true"  class="  verticalSpacer" style="vertical-align:top;display:none;">
+
+		<td id="me6c4e40f-sc" aria-live="polite" aria-hidden="true" style="width:50%;display:none;;padding:0px 2px;vertical-align: top" sc="true"  height="100%" class="sectioncol ">
+			<div id="me6c4e40f-sc_div" >
+			
+<table role="presentation" control="true" id="me6c4e40f-chld"   width="100%" height="100%" class="  " summary=""  style="width:100%;height:100%;;vertical-align:top">
+		<tr>
+			<td id="m602aed0a-so"  control="true" style="vertical-align:top;">
+	
+		<div id="m602aed0a-so_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
+		
+			<table id="m602aed0a-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="m602aed0a-so_1"  style="vertical-align:top;display:;" > 
+	<td id="m602aed0a-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="m602aed0a-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="m970453b-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m970453b-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m970453b-lb" align='right' ctype="label"     noclick="1"   targetid="m970453b-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m970453b-tb">Quantidade de vagas - Moto:</label></td>
+				<td  role='presentation'  id="m970453b-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="6" id="m970453b-tb"  aria-readonly="true"  role="textbox"  aria-labelledby="m970453b-lb" class="fld text   ib readonly masked fld fld_ro"     ctype="textbox"  dir="ltr" li="m970453b-img"  db="mb5fd5681-pb"    style="padding-right:2px;text-align: right;;width:5.5ch;"      tabindex="-1" readonly="readonly" type="text"   value="" work="1"/></td>
 				</tr>
-				<tr id="md8706c46-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
-				<td  role='presentation'  id="md8706c46-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="md8706c46-lb" align='right' ctype="label"     noclick="1"   targetid="md8706c46-lb"    class="text label  " required style="display:block;padding-left:2px;padding-top:2px;" for="md8706c46-tb"><img class='required_label' width='8px' height='8px' align='absmiddle' border='0' src='required_label.gif' alt=''/>Celular:</label></td>
-				<td  role='presentation'  id="md8706c46-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
-<input datatype="1" id="md8706c46-tb"  aria-required="true"  role="textbox"  aria-labelledby="md8706c46-lb" class="fld text   ib fld fld_req"     ctype="textbox"   li="md8706c46-img"  db="mb5fd5681-pb"   maxlength="10" style=";width:140px;"         type="text"   value="" ov="" work="1" fldInfo='{&quot;inttype&quot;:&quot;1&quot;,&quot;length&quot;:&quot;10&quot;,&quot;required&quot;:true}'/><img id="md8706c46-img" sf="1" role="none" active="0" ctype="image" alt=""  src="blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="md8706c46-tb"  class="dButton " align="center" width='26px' height='26px'  no-bg-hover   title=""/>
-			<span class="dbutton_spacer" role="presentation" aria-hidden="true"></span>
-	    </td>
+				<tr id="m90791481-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m90791481-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m90791481-lb" align='right' ctype="label"     noclick="1"   targetid="m90791481-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m90791481-tb">Quantidade de vagas - Automóvel:</label></td>
+				<td  role='presentation'  id="m90791481-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="6" id="m90791481-tb"  aria-readonly="true"  role="textbox"  aria-labelledby="m90791481-lb" class="fld text   ib readonly masked fld fld_ro"     ctype="textbox"  dir="ltr" li="m90791481-img"  db="mb5fd5681-pb"    style="padding-right:2px;text-align: right;;width:5.5ch;"      tabindex="-1" readonly="readonly" type="text"   value="" work="1"/></td>
+				</tr>
+				<tr id="me77e2417-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="me77e2417-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="me77e2417-lb" align='right' ctype="label"     noclick="1"   targetid="me77e2417-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="me77e2417-tb">Quantidade de vagas - Ônibus:</label></td>
+				<td  role='presentation'  id="me77e2417-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="6" id="me77e2417-tb"  aria-readonly="true"  role="textbox"  aria-labelledby="me77e2417-lb" class="fld text   ib readonly masked fld fld_ro"     ctype="textbox"  dir="ltr" li="me77e2417-img"  db="mb5fd5681-pb"    style="padding-right:2px;text-align: right;;width:5.5ch;"      tabindex="-1" readonly="readonly" type="text"   value="" work="1"/></td>
+				</tr>
+				<tr id="m791ab1b4-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m791ab1b4-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m791ab1b4-lb" align='right' ctype="label"     noclick="1"   targetid="m791ab1b4-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m791ab1b4-tb">Quantidade de vagas - Caminhão:</label></td>
+				<td  role='presentation'  id="m791ab1b4-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="6" id="m791ab1b4-tb"  aria-readonly="true"  role="textbox"  aria-labelledby="m791ab1b4-lb" class="fld text   ib readonly masked fld fld_ro"     ctype="textbox"  dir="ltr" li="m791ab1b4-img"  db="mb5fd5681-pb"    style="padding-right:2px;text-align: right;;width:5.5ch;"      tabindex="-1" readonly="readonly" type="text"   value="" work="1"/></td>
+				</tr>
+</table>
+</td>
+		</tr>
+		
+			</table>
+		</div>
+	
+			</td>
+		</tr>
+	</table>
+
+		</div>
+	</td>
+
+		<td id="m7fcdb5b5-sc" aria-live="polite" aria-hidden="true" style="width:50%;display:none;;padding:0px 2px;vertical-align: top" sc="true"  height="100%" class="sectioncol ">
+			<div id="m7fcdb5b5-sc_div" >
+			
+<table role="presentation" control="true" id="m7fcdb5b5-chld"   width="100%" height="100%" class="  " summary=""  style="width:100%;height:100%;;vertical-align:top">
+		<tr>
+			<td id="meb96135e-so"  control="true" style="vertical-align:top;">
+	
+		<div id="meb96135e-so_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
+		
+			<table id="meb96135e-so_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="meb96135e-so_1"  style="vertical-align:top;display:;" > 
+	<td id="meb96135e-se" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="meb96135e-chld"   width="100%"  class="tdtblw  " summary=""  style="width:100%;;;vertical-align:top">				<tr id="m14abd876-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m14abd876-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><label id="m14abd876-lb" align='right' ctype="label"     noclick="1"   targetid="m14abd876-lb"    class="text label  " style="display:block;padding-left:2px;padding-top:2px;" for="m14abd876-tb">Metragem:</label></td>
+				<td  role='presentation'  id="m14abd876-co2_1"     nowrap="nowrap"    class="  verticalSpacer" style="vertical-align:middle;">
+<input datatype="9" id="m14abd876-tb"  aria-readonly="true"  role="textbox"  aria-labelledby="m14abd876-lb" class="fld text   ib readonly masked fld fld_ro"     ctype="textbox"  dir="ltr" li="m14abd876-img"  db="mb5fd5681-pb"    style="padding-right:2px;text-align: right;;width:200px;"      tabindex="-1" readonly="readonly" type="text"   value="" work="1"/></td>
+				</tr>
+				<tr id="m63ace8e0-co_0"  role='presentation'    control="true"  class="  leafspacer verticalSpacer" style="vertical-align:top;">
+				<td  role='presentation'  id="m63ace8e0-co2_0"     nowrap="nowrap"   align="right" class="  verticalSpacer" style="vertical-align:middle;"><span id="m63ace8e0-lb" align='right' ctype="label"     noclick="1"  onclick=document.getElementById('m63ace8e0-cb').click() targetid="m63ace8e0-lb"    class="text label  " style="display: inline-block !important;padding-left:2px;padding-top:2px;">Aceita Veículos com Bloqueio Judicial?</span></td>
+				<td  role='presentation'  id="m63ace8e0-co2_1"     nowrap="nowrap"   align="left" class="  verticalSpacer" style="vertical-align:middle;">
+<div aria-live="polite" id="m63ace8e0-cb_holder" class="bc"><table role="presentation" id="m63ace8e0-cb_tb" border="0" cellspacing="0" cellpadding="0" style="margin:0px;vertical-align:middle;border:0px;display:inline-table;;" class="_b">
+		<tbody>
+			<tr>
+				<td valign="middle" class="cbtd"><a role="checkbox"  aria-checked="false" id="m63ace8e0-cb" ctype="checkbox" class="cb09"  title="" tabindex="-1" style="cursor:default" imgid="m63ace8e0-cb_img"  aria-disabled="true" mxejse="cbHdlr" fldInfo='{&quot;inttype&quot;:&quot;&quot;,&quot;length&quot;:&quot;&quot;,&quot;eventpriority&quot;:2}'><img border="0" alt="Aceita Veículos com Bloqueio Judicial: MASKED" tabindex="-1" align="texttop" id="m63ace8e0-cb_img"  class="checkbox   " src="cb_masked.gif"  imgtype="gif" imgname="cb_" checked="unchecked" style="cursor:default" readonly="true"/></a></td>
+			</tr>
+		</tbody>
+	</table></div></td>
 				</tr>
 </table>
 </td>
@@ -1043,7 +1188,7 @@ require(["dojo/domReady!"], function(){
 });
 menus = new MenuController("shared","Próximo","Anterior","Procurar","Procurar {0}.");
 menus["handlerId"] = "mainrec_menus";
-updateAutoFill("0",{"0":{"datastores":{"MS_STATE":{"typeahead":{"keyattribute":"value","attributes":["value","description"]}},"MS_DOCTYPE":{"typeahead":{"keyattribute":"value","attributes":["value","description"]}}}}});
+updateAutoFill("0",{"0":{"datastores":{"MS_CRAFT":{"typeahead":{"keyattribute":"value","attributes":["value","description"]}},"MS_COMPRELSHIP":{"typeahead":{"keyattribute":"value","attributes":["value","description"]}},"MS_STATE":{"typeahead":{"keyattribute":"value","attributes":["value","description"]}},"MS_DOCTYPE":{"typeahead":{"keyattribute":"value","attributes":["value","description"]}}}}});
 
 function processLoadMethods()
 {
@@ -1084,8 +1229,8 @@ sizeCanvas();
 		<input type="text" size="45" name="currentfocus" id="currentfocus" title="focus id" aria-hidden="true" /><br />
 		<input name="scrollleftpos" id="scrollleftpos" size="45" title="Scroll Left" aria-hidden="true"/><br />
 		<input name="scrolltoppos" id="scrolltoppos" size="45"  title="Scroll Top" aria-hidden="true"/><br />
-		<input type="text" size="45" name="uisessionid" id="uisessionid" aria-hidden="true" value="1258" class="fld_ro" readonly="readonly" title="ui session id"/><br />
-		<input type="text" size="45" name="csrftokenholder" id="csrftokenholder" aria-hidden="true" value="aiag3m2q6c9dlr4dj4f8kmfgc7" title="CSRF Token" readonly="readonly" class="fld_ro"/><br />
+		<input type="text" size="45" name="uisessionid" id="uisessionid" aria-hidden="true" value="1255" class="fld_ro" readonly="readonly" title="ui session id"/><br />
+		<input type="text" size="45" name="csrftokenholder" id="csrftokenholder" aria-hidden="true" value="vo9njjht54er13impef9gp8djr" title="CSRF Token" readonly="readonly" class="fld_ro"/><br />
 	</form>
 	</div>
 <script>
